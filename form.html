@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Oylama Formu - GS Avrupa Destanları</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Ana Sayfa</a> | 
+        <a href="form.html">Oylama Formu</a> | 
+        <a href="contact.html">İletişim</a>
+    </nav>
+
+    <h2>Galatasaray Avrupa Başarıları Oylama Formu</h2>
+    <p>Aşağıdaki formu doldurarak tarih boyunca elde edilen en büyük zaferimizi seçmemize yardımcı olun.</p>
+
+    <table border="3" cellpadding="10" cellspacing="0" style="width: 80%; margin: 20px auto;">
+        <tr>
+            <th colspan="2" style="background-color: #f2f2f2;">Kişisel Bilgiler ve Oylama</th>
+        </tr>
+        <tr>
+            <td><strong>Adınız Soyadınız:</strong></td>
+            <td><input type="text" name="kullanici_ad" placeholder="Örn: Ali Yılmaz" style="width: 90%;"></td> </tr>
+        <tr>
+            <td><strong>Favori Maçınızı Seçin:</strong></td>
+            <td>
+                <select name="mac_secimi" style="width: 95%;">
+                    <optgroup label="Klasik Dönem (Unutulmaz 10 Zafer)">
+                        <option value="1">Arsenal Finali (2000 UEFA Kupası)</option>
+                        <option value="2">Real Madrid (2000 Süper Kupa)</option>
+                        <option value="3">Neuchâtel Xamax (1988 - 5-0)</option>
+                        <option value="4">AC Milan (1999 - 3-2)</option>
+                        <option value="5">Manchester United (1993 - 3-3)</option>
+                        <option value="6">Juventus (2013 - 1-0)</option>
+                        <option value="7">Real Madrid (2001 - 3-2)</option>
+                        <option value="8">Leeds United (2000 - 2-2)</option>
+                        <option value="9">Barcelona (1994 - 2-1)</option>
+                        <option value="10">Monaco (1989 - 1-0)</option>
+                    </optgroup>
+                    <optgroup label="Yeni Dönem (Okan Buruk Destanları)">
+                        <option value="11">Galatasaray 1-0 Liverpool (30.09.2025)</option>
+                        <option value="12">Galatasaray 5-2 Juventus (17.02.2026)</option>
+                        <option value="13">Manchester United 2-3 Galatasaray (03.10.2023)</option>
+                        <option value="14">Galatasaray 3-2 Tottenham (07.11.2024)</option>
+                        <option value="15">Juventus 3-2 Galatasaray (25.02.2026)</option>
+                    </optgroup>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Taraftar Durumu:</strong></td>
+            <td>
+                <input type="radio" name="taraftar" value="kombine"> Kombine Sahibi 
+                <input type="radio" name="taraftar" value="uye"> Kulüp Üyesi 
+                <input type="radio" name="taraftar" value="diger"> Taraftar
+            </td>
+        </tr>
+        <tr>
+            <td><strong>İlgi Alanları:</strong></td>
+            <td>
+                <input type="checkbox" name="ilgi" value="haber"> Haberler 
+                <input type="checkbox" name="ilgi" value="bilet"> Bilet Duyuruları 
+                <input type="checkbox" name="ilgi" value="urun"> Lisanslı Ürünler
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                <button type="button" onclick="alert('Hi everyone from javascript')" style="padding: 10px 20px; cursor: pointer;">
+                    Oyu Gönder
+                </button>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
